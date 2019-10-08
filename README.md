@@ -1,4 +1,4 @@
-# Mid Semester Evaluation
+# Mid Term Evaluation
 
 Name: Deddy Aditya Pramana  
 NRP: 05111640000069
@@ -9,7 +9,7 @@ The plan is to apply Moodle E-learning Framework to a clustered database system 
 
 The vagrant file and provisioning scripts will be added later on `main` folder.
 
-### Diagram
+### Architechture Diagram
 
 ![Diagram](img/diagram.png)
 
@@ -19,7 +19,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 
 **Hardware Specification**
 
-- **CPU**: Single Core CPU
+- **CPU**: Single Core vCPU
 - **Memory**: 512 MB
 - **Virtualization Engine**: Virtualbox 6
 
@@ -39,7 +39,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 
 **Hardware Specification**
 
-- **CPU**: Single Core CPU
+- **CPU**: Single Core vCPU
 - **Memory**: 512 MB
 - **Virtualization Engine**: Virtualbox 6
 
@@ -58,7 +58,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 
 **Hardware Specification**
 
-- **CPU**: Single Core CPU
+- **CPU**: Single Core vCPU
 - **Memory**: 512 MB
 - **Virtualization Engine**: Virtualbox 6
 
@@ -78,7 +78,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 
 **Hardware Specification**
 
-- **CPU**: Single Core CPU
+- **CPU**: Single Core vCPU
 - **Memory**: 512 MB
 - **Virtualization Engine**: Virtualbox 6
 
@@ -92,13 +92,13 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 
 - **Hostname**: node2
 - **Type**: Host-only Network
-- **IP**: 192.168.16.73
+- **IP**: 192.168.16.72
 
 #### 5. Database Server #3
 
 **Hardware Specification**
 
-- **CPU**: Single Core CPU
+- **CPU**: Single Core vCPU
 - **Memory**: 512 MB
 - **Virtualization Engine**: Virtualbox 6
 
