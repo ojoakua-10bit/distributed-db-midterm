@@ -3,7 +3,7 @@
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install nginx php-fpm -y
 
-cat > /tmp/default.nginx <<EOF
+cat > default.nginx <<EOF
 ##
 # You should look at the following URL's in order to grasp a solid understanding
 # of Nginx configuration files in order to fully unleash the power of Nginx.
@@ -60,7 +60,7 @@ server {
     # pass PHP scripts to FastCGI server
     #
     location ~ \.php$ {
-    #    include snippets/fastcgi-php.conf;
+        include snippets/fastcgi-php.conf;
     #
     #    # With php-fpm (or other unix sockets):
         fastcgi_pass unix:/run/php/php7.3-fpm.sock;
@@ -100,8 +100,10 @@ EOF
 sudo mv -v default.nginx /etc/nginx/sites-available/default
 sudo systemctl restart nginx
 
-wget https://download.moodle.org/download.php/stable37/moodle-3.7.2.tgz
-sudo tar -xvzf moodle-latest-36.tgz -C /var/www/html
-sudo chown -R www-data:www-data /var/www/html/moodle/
-sudo chmod -R 755 /var/www/html/moodle/
-
+wget -q https://download.moodle.org/download.php/direct/stable37/moodle-3.7.2.tgz
+sudo tar -xvf moodle-3.7.2.tgz -C /var/www/html
+sudo chown -Rv www-data:www-data /var/www/html/moodle/
+sudo chmod -Rv 755 /var/www/html/moodle/
+sudo mkdir -v /var/www/moodledata
+sudo chown -Rv www-data:www-data /var/www/moodledata
+sudo chmod -Rv 755 /var/www/moodledata
