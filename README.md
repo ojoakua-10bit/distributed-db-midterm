@@ -65,7 +65,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 **Software Specification**
 
 - **OS**: Debian 10 Buster
-- **RDBMS**: Percona Server 8.0.16
+- **RDBMS**: Percona Server 5.7.27
 - **Clustering**: Percona XtraDB Cluster 5.7.27-31.39
 
 **Network Specification**
@@ -85,7 +85,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 **Software Specification**
 
 - **OS**: Debian 10 Buster
-- **RDBMS**: Percona Server 8.0.16
+- **RDBMS**: Percona Server 5.7.27
 - **Clustering**: Percona XtraDB Cluster 5.7.27-31.39
 
 **Network Specification**
@@ -105,7 +105,7 @@ The vagrant file and provisioning scripts will be added later on `main` folder.
 **Software Specification**
 
 - **OS**: Debian 10 Buster
-- **RDBMS**: Percona Server 8.0.16
+- **RDBMS**: Percona Server 5.7.27
 - **Clustering**: Percona XtraDB Cluster 5.7.27-31.39
 
 **Network Specification**
