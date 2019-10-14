@@ -3,7 +3,7 @@
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install nginx php-fpm -y
 
-cat > default.nginx <<EOF
+cat > default.nginx << EOF
 ##
 # You should look at the following URL's in order to grasp a solid understanding
 # of Nginx configuration files in order to fully unleash the power of Nginx.
